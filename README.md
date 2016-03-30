@@ -250,17 +250,19 @@ exit
 
 Now cd into the directory that has the test-nap script that came with this repo.
 
-Now run if using the script for the first time
+Now run the command below if using the script for the first time
 
 ```sh
 sudo chmod 755 test-nap
 ```
 
-An now you can run
+And now you can run
 
 ```sh
 ./test-nap br0
 ```
+
+Congratulations! You can now bridge ethernet through bluetooth! :)
 
 ### Version
 0.0.1
@@ -269,6 +271,7 @@ Copyright Babu
 ### Tech
 
 Uses Bluez, DBus, Webmin, and DHCP Server
+
 For extra help, use the link below or contact Babu at (408)833-5642 or rahul_ram@me.com
 
 For Bluetooth Ethernet Bridge
