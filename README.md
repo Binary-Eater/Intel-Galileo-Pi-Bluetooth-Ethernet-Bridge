@@ -17,7 +17,9 @@ Keep in mind to use this you will have to compromise sing the ethernet port for 
     - http://www.webmin.com/
     - Once downloaded run:
     - ```sudo dpkg -i <whatever the name of the deb file downloaded was + its extension>
+
         #in the directory that the deb file was downloaded in
+
         #for instance, cd ~/Downloads if your Downloads folder is Downloads before running this command
       ```
     
