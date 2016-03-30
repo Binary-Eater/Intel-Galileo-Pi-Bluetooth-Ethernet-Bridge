@@ -16,12 +16,14 @@ Keep in mind to use this you will have to compromise sing the ethernet port for 
     - Be sure to download the Debian package 
     - http://www.webmin.com/
     - Once downloaded run:
+
 ```sh
-sudo dpkg -i <whatever the name of the deb file downloaded was + its extension>
 
-        #in the directory that the deb file was downloaded in
+    sudo dpkg -i "whatever the name of the deb file downloaded was + its extension"
 
-        #for instance, cd ~/Downloads if your Downloads folder is Downloads before running this command
+    #in the directory that the deb file was downloaded in
+
+    #for instance, cd ~/Downloads if your Downloads folder is Downloads before running this command
 ```
     
 ## Installation
