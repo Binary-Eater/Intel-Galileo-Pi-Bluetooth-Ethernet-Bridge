@@ -266,6 +266,7 @@ Congratulations! You can now bridge ethernet through bluetooth! :)
 
 ### Version
 0.0.1
+
 Copyright Babu
 
 ### Tech
@@ -274,9 +275,9 @@ Uses Bluez, DBus, Webmin, and DHCP Server
 
 For extra help, use the link below or contact Babu at (408)833-5642 or rahul_ram@me.com
 
-For Bluetooth Ethernet Bridge
+For Bluetooth Ethernet Bridge:
 http://www.hkepc.com/forum/viewthread.php?tid=1710030
 
-For DHCP Server
+For DHCP Server:
 https://rbgeek.wordpress.com/2012/05/14/ubuntu-as-a-firewallgateway-router/
 
