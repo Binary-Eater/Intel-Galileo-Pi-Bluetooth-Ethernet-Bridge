@@ -1,0 +1,42 @@
+#!/usr/bin/python
+
+#Modified By Babu To Prevent Timeouts
+#Based on BlueZ Script For NAP Functionality
+#This script is intended for BlueZ Version 5 or higher and DBUS Version 4 or higher
+
+from __future__ import absolute_import, print_function, unicode_literals
+
+from optparse import OptionParser, make_option
+import sys
+import time
+import dbus
+import bluezutils
+
+bus = dbus.SystemBus()
+
+option_list = [
+		make_option("-i", "--device", action="store",
+				type="string", dest="dev_id"),
+		]
+parser = OptionParser(option_list=option_list)
+
+(options, args) = parser.parse_args()
+
+adapter_path = bluezutils.find_adapter(options.dev_id).object_path
+server = dbus.Interface(bus.get_object("org.bluez", adapter_path),
+						"org.bluez.NetworkServer1")
+
+service = "nap"
+
+if (len(args) < 1):
+	bridge = "tether"
+else:
+	bridge = args[0]
+
+server.Register(service, bridge)
+
+print("Server for %s registered for %s" % (service, bridge))
+
+raw_input("Press <Enter> to disconnect")
+
+server.Unregister(service)
