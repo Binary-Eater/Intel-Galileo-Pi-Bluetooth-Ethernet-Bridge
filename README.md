@@ -1,12 +1,12 @@
 # BlueZ Ethernet Bridging With DHCP Server Binded To Ethernet Device
 
-Keep in mind to use this you will have to compromise sing the ethernet port for network access while running this if you choose to run the DHCP server on Pi instead of a laptop.
+Keep in mind to use this you will have to compromise sing the ethernet port for network access while running this if you choose to run the DHCP server on Intel Galileo or Pi instead of a laptop.
 
   - Prerequisites: An ethernet controller and bluetooth module (The Pi 3 has both built-in)
 
 ## Needed Items To Download Before Proceeding
 
-  - On Any Debian Based System To Run The Bluetooth-Etheret Bridging (aka a Pi)
+  - On Any Debian Based System To Run The Bluetooth-Etheret Bridging (aka an Intel Galileo or Pi)
  - ```sudo apt-get install bluetooth dbus bluez bluez-utils bridge-utils python-bluez python-dbus
     ```
   - For whatver device you want running the DHCP server (could be the Pi or a computer)
@@ -142,7 +142,7 @@ sudo service networking restart
 
 #### Bluetooth Bridging Device
 
-On the bluetooth bridging device (probably a Pi), run this command
+On the bluetooth bridging device (probably an Intel Galileo or Pi), run this command
 
 ```sh
 ifconfig
