@@ -13,7 +13,7 @@ Keep in mind to use this you will have to compromise sing the ethernet port for 
   - ```sudo apt-get install isc-dhcp-server bind9
     ```
   - Now, you will need Webmin on whatever device is running the DHCP server, so that it may take care of ip-table rules for you.
-    - Be sure to download the Debian package 
+    - Be sure to download the Debian package
     - http://www.webmin.com/
     - Once downloaded run:
 
@@ -24,7 +24,7 @@ Keep in mind to use this you will have to compromise sing the ethernet port for 
 
     #for instance, cd ~/Downloads if your Downloads folder is Downloads before running this command
 ```
-    
+
 ## Installation
 #### DHCP Server Device
 
@@ -111,7 +111,7 @@ Hit Control-X and then save the file by following nano's instructions. Probably 
 Now run in the Terminal
 
 ```sh
-sudo service isc-dhcp-server restart 
+sudo service isc-dhcp-server restart
 ```
 
 ```sh
@@ -273,11 +273,8 @@ Copyright Babu
 
 Uses Bluez, DBus, Webmin, and DHCP Server
 
-For extra help, use the link below or contact Babu at (408)833-5642 or rahul_ram@me.com
-
 For Bluetooth Ethernet Bridge:
 http://www.hkepc.com/forum/viewthread.php?tid=1710030
 
 For DHCP Server:
 https://rbgeek.wordpress.com/2012/05/14/ubuntu-as-a-firewallgateway-router/
-
