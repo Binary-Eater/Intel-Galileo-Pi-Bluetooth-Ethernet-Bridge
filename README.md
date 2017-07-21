@@ -7,22 +7,24 @@ Keep in mind to use this you will have to compromise sing the ethernet port for 
 ## Needed Items To Download Before Proceeding
 
   - On Any Debian Based System To Run The Bluetooth-Etheret Bridging (aka an Intel Galileo or Pi)
- - ```sudo apt-get install bluetooth dbus bluez bluez-utils bridge-utils python-bluez python-dbus
-    ```
+ ```
+  sudo apt-get install bluetooth dbus bluez bluez-utils bridge-utils python-bluez python-dbus
+ ```
   - For whatver device you want running the DHCP server (could be the Pi or a computer)
-  - ```sudo apt-get install isc-dhcp-server bind9
-    ```
+ ```
+  sudo apt-get install isc-dhcp-server bind9
+ ```
   - Now, you will need Webmin on whatever device is running the DHCP server, so that it may take care of ip-table rules for you.
     - Be sure to download the Debian package
     - http://www.webmin.com/
     - Once downloaded run:
 
 ```sh
-    sudo dpkg -i "whatever the name of the deb file downloaded was + its extension"
+  sudo dpkg -i "whatever the name of the deb file downloaded was + its extension"
 
-    #in the directory that the deb file was downloaded in
+  #in the directory that the deb file was downloaded in
 
-    #for instance, cd ~/Downloads if your Downloads folder is Downloads before running this command
+  #for instance, cd ~/Downloads if your Downloads folder is Downloads before running this command
 ```
 
 ## Installation
